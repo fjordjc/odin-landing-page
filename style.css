@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .section {
@@ -87,12 +88,13 @@
 .section2 {
     display: flex;
     flex-wrap: nowrap;
-    background-color: antiquewhite;
+    align-content: center;
 }
 
 .section2head,
 .section2pics {
     background: antiquewhite;
+    padding: 64px;
 }
 
 .section2head {
@@ -106,7 +108,6 @@
 .section2pics {
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 52px;
     padding-bottom: 32px;
@@ -134,7 +135,7 @@
 .section3quote {
     display: flex;
     flex-direction: column;
-    margin: 0 200px;
+    margin: 0 300px;
     justify-content: center;
     align-items: center;
     background-color: #E5E7EB;
@@ -146,14 +147,16 @@
 }
 
 .section3author {
+    text-align: right;
     margin-right: 200px;
-    font-size: 18px;
+    font-size: 24px;
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
     flex-wrap: nowrap;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
+    padding: 16px 0;
 }
 
 .section4 {
@@ -162,7 +165,7 @@
     justify-content: space-around;
     background-color: #3882F6;
     margin: 64px 200px;
-    padding: 64px;
+    padding: 48px;
     gap: 32px;
     border-radius: 8px;
     color: #F9FAF8;
@@ -179,10 +182,12 @@
     border-color: white;
     background-color: #3882F6;
     color: white;
-    padding: 8px 16px;
+    padding: 6px 30px;
     display: flex;
     flex-wrap: nowrap;
     flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 .footer {
