@@ -4,11 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-}
-
 .header,
 .section1main,
 .footer {
@@ -85,18 +80,6 @@
     margin-right: 200px;
 }
 
-.section2 {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-}
-
-.section2head,
-.section2pics {
-    background: antiquewhite;
-    padding: 64px;
-}
-
 .section2head {
     text-align: center;
     font-size: 36px;
@@ -106,11 +89,13 @@
 }
 
 .section2pics {
-    text-align: center;
     display: flex;
+    text-align: center;
+    align-self: center;
     justify-content: center;
     gap: 52px;
     padding-bottom: 32px;
+    height: 22.5em;
 }
 
 .pic {
@@ -124,12 +109,9 @@
     width: 200px;
 }
 
-.section3 {
-    display: flex;
-}
-
 .fullquote {
     background-color: #E5E7EB;
+    overflow: hidden;
 }
 
 .section3quote {
@@ -144,6 +126,7 @@
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    text-overflow: ellipsis;
 }
 
 .section3author {
@@ -193,4 +176,5 @@
 .footer {
     padding: 40px 0;
     text-align: center;
+    flex: 1 1 auto;
 }
